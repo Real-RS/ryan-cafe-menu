@@ -10,9 +10,11 @@
       text-align: center;
       padding: 40px;
     }
+    
     h1 {
       color: #6b4f3b;
     }
+    
     .menu {
       background: white;
       border-radius: 16px;
@@ -21,32 +23,22 @@
       margin: auto;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .item {
-      display: flex;
-      justify-content: space-between;
-      margin: 10px 0;
-    
-    .menu-item:last-child {
-      border-bottom: none; /* 最后一项不需要线 */
-    }
-    
-    .name {
-      font-size: 18px;
-      font-weight: 500;
-      color: #4b3b2b;
-    }
     
     .menu-item {
       display: flex;
       align-items: center;   /* ✅ 垂直居中 */
-      gap: 20px;             /* 图片和文字间距 */
-      padding: 20px 0;
-      border-bottom: 1px solid #ddd; /* ✅ 分割线 */
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .menu-item:last-child {
+      border-bottom: none;
     }
     
     .menu-item img {
-      width: 120px;
-      height: 120px;
+      width: 80px;          /* ✅ 缩小50% */
+      height: 80px;
       object-fit: cover;
       border-radius: 10px;
     }
@@ -55,6 +47,16 @@
       flex: 1;
       text-align: left;
     }
+    
+    .name {
+      font-size: 22px;      /* ✅ 放大字体 */
+      font-weight: 600;
+      color: #4b3b2b;
+    }
+    
+    .info p {
+      font-size: 16px;
+      margin: 5px 0;
     }
   </style>
 </head>
