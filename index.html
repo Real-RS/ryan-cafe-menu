@@ -15,17 +15,39 @@
     }
     .menu {
       background: white;
-      padding: 20px;
-      border-radius: 12px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      padding: 10px 20px;
     }
-    .item {
-      display: flex;
-      justify-content: space-between;
-      margin: 10px 0;
+
+    .menu-item:last-child {
+      border-bottom: none; /* 最后一项不需要线 */
+    }
+    
+    .name {
       font-size: 18px;
+      font-weight: 500;
+      color: #4b3b2b;
+    }
+    
+    .menu-item {
+      display: flex;
+      align-items: center;   /* ✅ 垂直居中 */
+      gap: 20px;             /* 图片和文字间距 */
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd; /* ✅ 分割线 */
+    }
+    
+    .menu-item img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    
+    .info {
+      flex: 1;
+      text-align: left;
+    }
     }
   </style>
 </head>
